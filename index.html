@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>SeedBot</title>
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <Style>
+.prefix{
+    position:relative;
+    left: -50px;
+}
+</Style>
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Menu Area Start -->
+                <div class="col-12 col-lg-10">
+                    <div class="menu_area">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="#">SeedBot</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <!-- Menu Area -->
+                            <div class="collapse navbar-collapse" id="ca-navbar">
+                                <ul class="navbar-nav ml-auto" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#commands">Commands</a></li>
+                                </ul>
+                                <div class="sing-up-button d-lg-none">
+                                    <a href="invite/">Invite Me!</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Signup btn -->
+                <div class="col-12 col-lg-2">
+                    <div class="sing-up-button d-none d-lg-block">
+                        <a href="invite/">Invite Me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>SeedBot</h2>
+                        <h3>S</h3>
+                        <p>A multi-function discord bot written with discord.js</p>
+                    </div>
+                    <div class="get-start-area">
+                        <!-- Form Start -->
+                        <form action="invite/" method="post" class="form-inline">
+                            <a herf="invite/"><input type="submit" class="submit" value="Invite Me!"></a>
+                        </form>
+                        <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Welcome thumb -->
+        <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+            <img src="seedbot.png" alt="" style="position:relative;top:-350px;">
+        </div>
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    
+
+    <!-- ***** Awesome Features Start ***** -->
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="commands">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text -->
+                    <div class="section-heading text-center">
+                        <h2>Commands List</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="prefix">
+                    <strong>Prefix:<br>
+                    s!  // Default<br>
+                    sm? // Math<br>
+                    s~  // Developer/Creator<br>
+                    s?  // Music<br></strong>
+                </div>
+                <div class="commands">
+                    <br>
+                    <h3 id="opensans">Generic Commands</h3>
+                    s!ping<br>
+                    <em>Sends a Ping message<br></em>
+                    <br>
+                    s!invite<br>
+                    <em>An invite for the bot<br></em>
+                    <br>
+                    s!discord<br>
+                    <em>A Invite to the discord server<br></em>
+                    <br>
+                    <h3 id="opensans">Moderation Commands [All Broken at the moment]</h3>
+                    s!kick [User to kick]<br>
+                    <strong>Requires Admin/Moderator</strong><br>
+                    <br>
+                    s!ban [User to ban] [Reason]<br>
+                    <strong>Requires Admin/Moderator</strong><br>
+                    <br>
+                    s!purge [ammount of messages to delete]<br>
+                    <em>Deletes a certian ammount of messages<br></em>
+                    <strong>Requires Admin/Moderator</strong><br>
+                    <br>
+                    <h3 id="opensans">Fun Commands</h3>
+                    s!rps<br>
+                    <em>Rock Paper Scissors!<br></em>
+                    <br>
+                    s!punch<br>
+                    <em>Punches someone you don't like<br></em>
+                    <br>
+                    s!Avatar<br>
+                    <em>Gets your discord pfp/avatar<br></em>
+                    <br>
+                    s!Hammer<br>
+                    <em>Bashes someone<br></em>
+                    <br>
+
+                    <h3 id="opensans">DMOJ Commands</h5><br>
+                    s!problem<br>
+                    <em>Loads problem info and a link to the problem<br></em>
+                    <br>
+                    s!search<br>
+                    <em>Searches for a problem<br>
+                    <br>
+                    s!contest<br>
+                    <em>Loads content data and a link to the contest<br></em>
+                    <br>
+                    s!content-search<br>
+                    <em>Searches for a contest that has a similar name<br></em>
+                    <br>
+                    s!user<br>
+                    <em>Loads information about the user and a link to the user<br></em>
+                    <br>
+                    s!user-search<br>
+                    <em>Searches for a user with a similar name and loads information about the user.<br></em>
+                    <br>
+                    <h3 id="opensans">Math Commands Commands</h3>
+                    sm! [Math Equation]<br>
+                    <strong>Supported Equations</strong><br>
+                    <em>= + - * / ÷ % ( ) pow sqrt round floor ceiling <br>
+                    ceil pi euler absolute abs exp logarithm log random rand<br></em>
+                    <br>
+                    <br>
+                    <br>
+                    <h3 id="opensans">Developer Commands</h3>
+                    s~exec [node.js command]<br>
+                    <em>Executes the command in node.js</em>
+                    <br>
+                    s~serverlist<br>
+                    <em>Outputs a list of servers that the bot is apart of<br></em>
+                    <br>
+                    s~usercount<br>
+                    <em>Outputs the total number of users that are apart of all servers<br></em>
+                    <br>
+                    s~channels<br>
+                    <em>DM's the owner the total number of channels that the bot can read.<br></em>
+                    <br>
+                    <br>
+                    s~rpc [set Rich Presence message]<br>
+                    s~rpc reset // (resets rich presence to default)<br>
+                    <br>
+                    s~spam [message] [message count]<br>
+                    <em>Spams the payload for the ammount that you want.<br></em>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ***** Awesome Features End ***** -->
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="footer-text">
+            <h2>SeedBot</h2>
+        </div>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <!--a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a-->
+            <a href="http://twitter.com/darioxdotclub"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+            <!--a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a-->
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+            <p>Copyright ©2018-2019 <a href="http://jyles.club">Jyles Coad-Ward</a> and <a href="http://dariox.club">DARiOX.club</a></p>
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
