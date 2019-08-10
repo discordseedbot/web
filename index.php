@@ -179,6 +179,10 @@ s~rpc content <sup>the content can be, reset, refresh, or any message</sup><br>
 <br>
 s~shell [*nix shell command]<br>
 <em>Executes shell command with whatever user the bot is running under</em><br>
+<br>
+<br>
+<br>
+<br>
     </div>
   </body>
 </html>
