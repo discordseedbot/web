@@ -1,0 +1,53 @@
+.custom-description{
+	width: calc(100% - 700px);
+	margin-top:150px;
+	margin-left: 40px;
+}
+.custom-content .title{
+	margin-left: 100px;
+	margin-top: 70px;
+}
+.logo {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+}
+.commands{
+	margin-left: 50px;
+	width: calc(100% - 200px);
+}
+.custom-seperator{
+	width: calc(100% - 250px);
+	margin-left: 125px;
+	height:1px;
+	border-top: 1px #666 dashed;
+}
+.prefix{
+	position:absolute;
+	top: 1000px;
+	right: 150px;
+	border-radius: 5px;
+	border: 1px #666 solid;
+	padding: 15px;
+	background-color: #d1d1d1;
+}
+.prefix code{
+	color: #333;
+}
+.stastics{
+	margin-left: 150px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
