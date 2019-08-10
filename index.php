@@ -37,7 +37,7 @@
       </div>
     </nav>
     <div class="custom-content">
-      <img src="logo.png" class="logo" height="500px">
+      <img src="logo.png" class="logo" height="400px">
       <div class="title">
         <h1>Welcome to SeedBots Home</h1><br>
         <h2><sup>stay as long as you like!</sup></h2>
@@ -73,7 +73,6 @@ sm!...|....Math<br>
 s~....|....Owner<br>
       </code>
     </div>
-    <br><br><br>
     <div class="custom-seperator" id="commands"></div>
     <br><br><br>
     <div class="commands">

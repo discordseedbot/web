@@ -23,9 +23,10 @@
 	border-top: 1px #666 dashed;
 }
 .prefix{
-	position:absolute;
-	top: 1000px;
-	right: 150px;
+	width: 200px;
+	position:relative;
+	top: 200px;
+	left:calc(100% - 250px);
 	border-radius: 5px;
 	border: 1px #666 solid;
 	padding: 15px;
