@@ -7,10 +7,17 @@
 	margin-left: 100px;
 	margin-top: 70px;
 }
+.custom-content {
+	display: flex;
+	flex-flow: column;
+}
+.custom-content-bot-con {
+	display: flex;
+	flex-flow: row;
+	margin-left: 70px;
+}
 .logo {
-	position: absolute;
-	top: 100px;
-	right: 100px;
+	margin-left: 100px;
 }
 .commands{
 	margin-left: 50px;
