@@ -37,14 +37,16 @@
       </div>
     </nav>
     <div class="custom-content">
-      <img src="https://storage.googleapis.com/file-asia/cdn/seedbot/logo.png" class="logo" height="400px">
       <div class="title">
         <h1>Welcome to SeedBots Home</h1><br>
         <h2><sup>stay as long as you like!</sup></h2>
       </div>
-      <div class="custom-description">
-        <h3>What is SeedBot</h3>
-        <p>SeedBot is a Discord Bot for programmers <strong>by</strong> programmers. This is mainly due to the DMOJ Module that the <a href="https://github.com/finchiedev">Amazing FinchieDev</a> developed. Other than the DMOJ Module there are other things in the bot such as, music, fun commands, and moderation bot. Our goal is to make the knockoff but good swiss-army knife of discord bots. If you want to see our wide range of commands then <a href="#commands">click here</a>. Oh and its open source.
+      <div class="custom-content-bot-con">
+        <div class="custom-description">
+          <h3>What is SeedBot</h3>
+          <p>SeedBot is a Discord Bot for programmers <strong>by</strong> programmers. This is mainly due to the DMOJ Module that the <a href="https://github.com/finchiedev">Amazing FinchieDev</a> developed. Other than the DMOJ Module there are other things in the bot such as, music, fun commands, and moderation bot. Our goal is to make the knockoff but good swiss-army knife of discord bots. If you want to see our wide range of commands then <a href="#commands">click here</a>. Oh and its open source.
+        </div>
+        <img src="logo.png" class="logo" height="400px">
       </div>
     </div>
     <br><br><br>
