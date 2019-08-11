@@ -8,6 +8,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="fa/css/all.css" rel="stylesheet"> 
     <title>SeedBot | Offical Website</title>
   </head>
   <body>
@@ -30,6 +31,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#commands">Commands</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://patreon.com/jyles_coadward"><i class="fab fa-patreon"></i> Patreon</a>
+          </li>
         </ul>
         <span class="navbar-text">
           <a class="nav-link" href="http://seedbot.jyles.club/invite">Invite Me!</a>
@@ -46,7 +50,7 @@
           <h3>What is SeedBot</h3>
           <p>SeedBot is a Discord Bot for programmers <strong>by</strong> programmers. This is mainly due to the DMOJ Module that the <a href="https://github.com/finchiedev">Amazing FinchieDev</a> developed. Other than the DMOJ Module there are other things in the bot such as, music, fun commands, and moderation bot. Our goal is to make the knockoff but good swiss-army knife of discord bots. If you want to see our wide range of commands then <a href="#commands">click here</a>. Oh and its open source.
         </div>
-        <img src="logo.png" class="logo" height="400px">
+        <img src="https://storage.googleapis.com/file-asia/cdn/seedbot/logo.png" class="logo" height="400px">
       </div>
     </div>
     <br><br><br>
@@ -184,6 +188,11 @@ s~shell [*nix shell command]<br>
 <br>
 <br>
 <br>
+    </div>
+    <div class="footer">
+      <div class="copyright">
+        Copyright &copy; 2018-2019 <a href="http://dariox.club">DARiOX</a> and <a href="http://jyles.club">Jyles Coad-Ward</a>
+      </div>
     </div>
   </body>
 </html>
