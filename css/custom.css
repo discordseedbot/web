@@ -68,7 +68,7 @@ tr:nth-child(even) {
 	background-color:#F8F9FA;
 	border-top:1px #666666 dotted;
 }
-.footer .copyright{
+.copyright{
 	position:absolute;
 	bottom:25px;
 	margin-left: calc(50% - 184.72px);
