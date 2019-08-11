@@ -66,7 +66,6 @@
     <td><?php echo $guilds; ?></td>
   </tr>
 </table>
-    <br><br>
     </div>
     <div class="prefix">
       <code>
