@@ -37,7 +37,7 @@
       </div>
     </nav>
     <div class="custom-content">
-      <img src="logo.png" class="logo" height="400px">
+      <img src="https://storage.googleapis.com/file-asia/cdn/seedbot/logo.png" class="logo" height="400px">
       <div class="title">
         <h1>Welcome to SeedBots Home</h1><br>
         <h2><sup>stay as long as you like!</sup></h2>
