@@ -2,6 +2,18 @@
   $users = file_get_contents('http://seedbot.dxcdn.net/users.txt');
   $channels = file_get_contents('http://seedbot.dxcdn.net/channels.txt');
   $guilds = file_get_contents('http://seedbot.dxcdn.net/guilds.txt');
+  $botStatus;
+	if (strlen($users) > 1) {
+		$botStatus = <<<EOF
+<h3 class="status online">Online</h3>
+EOF;
+	} else {
+		$botStatus = <<<EOF
+<h3 class="status offline">Offline</h3><br>
+<p>SeedBot is Offline! Check <a href="http://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="http://status.dariox.club">DARiOX Status Page</a>.
+EOF;
+	}
+
 ?>
 <!DOCTYPE html, php7.2>
 <html>
@@ -70,6 +82,7 @@
     <td><?php echo $guilds; ?></td>
   </tr>
 </table>
+<?php echo $botStatus; ?>
     </div>
     <div class="prefix">
       <code>

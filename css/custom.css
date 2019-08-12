@@ -73,3 +73,14 @@ tr:nth-child(even) {
 	bottom:25px;
 	margin-left: calc(50% - 184.72px);
 }
+.status {
+	margin-left: 275px;
+	position: relative;
+	bottom: 110px;
+}
+.online {
+	color: #2b8c45;
+}
+.offline {
+	color: #c93636;
+}
