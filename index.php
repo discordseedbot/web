@@ -174,8 +174,8 @@ Addition (+), Subtraction (-), Multiplication (*), Division (/ or ÷), Power to 
 <br>
 <br>
 <h3> Developer Commands </h3>
-s~getip [v4 or v6]<br>
-<em>Returns with the public ip of what version specifiyed.</em><br>
+s~getip<br>
+<em>Returns public IP address provided by ISP.</em><br>
 <br>
 s~announce [message] <sup>Disabled</sup><br>
 <em>Puts message in every channel the bot can access.</em><br>
