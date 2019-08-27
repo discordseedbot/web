@@ -3,7 +3,20 @@
   $channels = file_get_contents('http://seedbot.dxcdn.net/channels.txt');
   $guilds = file_get_contents('http://seedbot.dxcdn.net/guilds.txt');
   $botStatus;
-	if (strlen($users) > 1) {
+
+require_once('Ping/Ping.php');
+$host = 'seedbot.dxcdn.net';
+$ping = new Ping($host);
+$latency = $ping->ping();
+if ($latency) {
+  $isBotOnline = True;
+}
+else {
+  $isBotOnline = False;
+}
+
+
+	if ($isBotOnline) {
 		$botStatus = <<<EOF
 <h3 class="status online">Online</h3>
 EOF;
@@ -74,7 +87,7 @@ EOF;
   <tr>
     <th>Users</th>
     <th>Channels</th>
-    <th>Guilds</th>
+    <th>Server</th>
   </tr>
   <tr>
     <td><?php echo $users; ?></td>
@@ -192,7 +205,7 @@ s~eval [Node.JS command to execute]<br>
 s~restart<br>
 <em>Restarts discord bot.</em><br>
 <br>
-s~rpc content <sup>the content can be, reset, refresh, or any message</sup><br>
+s~rpc [content] <sup>the content can be, reset, refresh, or a message</sup><br>
 <em>Resets, Refreshes, or sets the Rich Presence message</em><br>
 <br>
 s~shell [*nix shell command]<br>
