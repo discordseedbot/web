@@ -51,7 +51,7 @@ EOF;
             <a class="nav-link" href="https://github.com/discordseedbot">Github</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://jyles.club/redirect.php?page=discord">Support Discord</a>
+            <a class="nav-link" href="http://seedbot.jyles.club/discord">Discord</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#commands">Commands</a>
