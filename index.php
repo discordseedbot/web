@@ -121,6 +121,9 @@ s!support<br>
 s!help<br>
 <em>Gives you a link to this page.</em><br>
 <br>
+s!patreon<br>
+<em><a href="https://patreon.com/jyles_coadward">Returns info on how donating on patreon helps me.</a></em><br>
+<br>
 <br>
 <br>
 <h3> Moderation Commands <sup>All Disabled</sup></h3>
@@ -156,6 +159,9 @@ s!asciify<br>
 <br>
 s!ppsize<br>
 <em>See how big your pea is!</em><br>
+<br>
+s!copypasta<br>
+<em>Randomly picks a copypasta out of our library!</em><br>
 <br>
 <br>
 <br>
