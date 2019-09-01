@@ -85,3 +85,7 @@ tr:nth-child(even) {
 	color: #c93636;
 	margin-left: 300px;
 }
+svg {
+	fill: rgba(0,0,0,0.5);
+	stroke:#000;
+}

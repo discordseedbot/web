@@ -39,12 +39,14 @@ EOF;
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/discordseedbot">Github</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://seedbot.jyles.club/discord">Discord</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#commands">Commands</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://seedbot.jyles.club/discord">
+<img src="Discord-Wordmark-Black.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
+            </a>
           <li class="nav-item">
             <a class="nav-link" href="https://patreon.com/jyles_coadward"><i class="fab fa-patreon"></i> Patreon</a>
           </li>
