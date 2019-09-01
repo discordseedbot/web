@@ -2,6 +2,7 @@
   $users = file_get_contents('http://seedbot.dxcdn.net/users.txt');
   $channels = file_get_contents('http://seedbot.dxcdn.net/channels.txt');
   $guilds = file_get_contents('http://seedbot.dxcdn.net/guilds.txt');
+  $botversion = file_get_contents('http://seedbot.dxcdn.net/version.txt');
   $botStatus;
 
 require_once('Ping/Ping.php');
@@ -28,7 +29,7 @@ EOF;
 	}
 
 ?>
-<!DOCTYPE html, php7.2>
+<!DOCTYPE html>
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -88,11 +89,13 @@ EOF;
     <th>Users</th>
     <th>Channels</th>
     <th>Server</th>
+    <th>Current Bot Version</th>
   </tr>
   <tr>
     <td><?php echo $users; ?></td>
     <td><?php echo $channels; ?></td>
     <td><?php echo $guilds; ?></td>
+    <td><?php echo $botversion; ?></td>
   </tr>
 </table>
 <?php echo $botStatus; ?>
@@ -216,6 +219,12 @@ s~rpc [content] <sup>the content can be, reset, refresh, or a message</sup><br>
 <br>
 s~shell [*nix shell command]<br>
 <em>Executes shell command with whatever user the bot is running under</em><br>
+<br>
+s~createinvitefromid [server/guild id]<br>
+<em>Creates Invite from the server/guild ID specifiyed</em><br>
+<br>
+s~getallserverinvite<br>
+<em>Gets invite links from all servers/guilds SeedBot is in</em><br>
 <br>
 <br>
 <br>
