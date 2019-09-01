@@ -83,4 +83,5 @@ tr:nth-child(even) {
 }
 .offline {
 	color: #c93636;
+	margin-left: 300px;
 }
