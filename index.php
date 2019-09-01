@@ -5,31 +5,19 @@
   $botversion = file_get_contents('http://seedbot.dxcdn.net/version.txt');
   $botStatus;
 
-require_once('Ping/Ping.php');
-$host = 'seedbot.dxcdn.net';
-$ping = new Ping($host);
-$latency = $ping->ping();
-if ($latency) {
-  $isBotOnline = True;
-}
-else {
-  $isBotOnline = False;
-}
-
-
-	if ($isBotOnline) {
-		$botStatus = <<<EOF
+  if (strlen($users) > 1) {
+    $botStatus = <<<EOF
 <h3 class="status online">Online</h3>
 EOF;
-	} else {
-		$botStatus = <<<EOF
+  } else {
+    $botStatus = <<<EOF
 <h3 class="status offline">Offline</h3><br>
 <p>SeedBot is Offline! Check <a href="http://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="http://status.dariox.club">DARiOX Status Page</a>.
 EOF;
-	}
+  }
 
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html, php7.2>
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -89,7 +77,7 @@ EOF;
     <th>Users</th>
     <th>Channels</th>
     <th>Server</th>
-    <th>Current Bot Version</th>
+    <th>Bot Version</th>
   </tr>
   <tr>
     <td><?php echo $users; ?></td>
