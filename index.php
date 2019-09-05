@@ -34,7 +34,7 @@ EOF;
     header("Location: https://github.com/discordseedbot/web");
   }
   elseif ($page === "github" && $repo === "changelog") {
-    header("Location: https://github.com/discordseedbot/changelog")
+    header("Location: https://github.com/discordseedbot/changelog");
   }
   elseif ($page === "guide") {
     header("Location: https://github.com/discordseedbot/guide");
