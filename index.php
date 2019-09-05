@@ -18,8 +18,8 @@ EOF;
 
   $page=$_GET['page'];
   $repo=$_GET['repo'];
-  if ($page === "support") {
-    header("Location: https://discord.gg/VMszsux");
+  if ($page === "supportemail") {
+    header("Location: mailto:contact@dariox.club");
   }
   elseif ($page === "invite") {
     header("Location: https://discordapp.com/oauth2/authorize?client_id=423432378640498688&scope=bot&permissions=8");
@@ -41,6 +41,9 @@ EOF;
   }
   elseif ($page === 'patreon') {
     header("Location: https://patreon.com/jyles_coadward");
+  }
+  elseif ($page === "discord") {
+    header("Location: https://discord.gg/VMszsux");
   }
 
 
