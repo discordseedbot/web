@@ -76,7 +76,7 @@ tr:nth-child(even) {
 .status {
 	margin-left: 230px;
 	position: relative;
-	bottom: 110px;
+	bottom: 125px;
 }
 .online {
 	color: #2b8c45;
