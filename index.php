@@ -15,12 +15,12 @@ EOF;
 <p>SeedBot is Offline! Check <a href="https://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="https://status.dariox.club">DARiOX Status Page</a>.
 EOF;
   }
-  if (isset($_GET['page'])){
+  //if (isset($_GET['page'])){
     $page = $_GET['page'];
-  } { $page = false; }
-  if (isset($_GET['gitrepo'])){
+  //} { $page = false; }
+ // if (isset($_GET['gitrepo'])){
    $repo = $_GET['gitrepo']; 
-  } else { $repo = false; }
+  //} else { $repo = false; }
   
   if ($page === "supportemail") {
     header("Location: mailto:contact@dariox.club");
@@ -98,7 +98,7 @@ EOF;
     </nav>
     <div class="custom-content">
       <div class="title">
-        <h1>Welcome to SeedBots Home</h1><br>
+        <h1>Welcome to the home of SeedBot</h1><br>
         <h2><sup>stay as long as you like!</sup></h2>
       </div>
       <div class="custom-content-bot-con">
