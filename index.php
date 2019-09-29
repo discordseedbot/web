@@ -1,8 +1,8 @@
 <?php
-  $users = file_get_contents('http://api.seedbot.xyz/users.txt');
-  $channels = file_get_contents('http://api.seedbot.xyz/channels.txt');
-  $guilds = file_get_contents('http://api.seedbot.xyz/guilds.txt');
-  $botversion = file_get_contents('http://api.seedbot.xyz/version.txt');
+  $users = file_get_contents('https://api.seedbot.xyz/users.txt');
+  $channels = file_get_contents('https://api.seedbot.xyz/channels.txt');
+  $guilds = file_get_contents('https://api.seedbot.xyz/guilds.txt');
+  $botversion = file_get_contents('https://api.seedbot.xyz/version.txt');
   $botStatus;
 
   if (strlen($users) > 1) {
@@ -12,7 +12,7 @@ EOF;
   } else {
     $botStatus = <<<EOF
 <h3 class="status offline">Offline</h3><br>
-<p>SeedBot is Offline! Check <a href="http://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="http://status.dariox.club">DARiOX Status Page</a>.
+<p>SeedBot is Offline! Check <a href="https://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="https://status.dariox.club">DARiOX Status Page</a>.
 EOF;
   }
   if (isset($_GET['page'])){
@@ -74,17 +74,17 @@ EOF;
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="http://seedbot.xyz">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://seedbot.xyz">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://seedbot.xyz/?page=github">Github</a>
+            <a class="nav-link" href="https://seedbot.xyz/?page=github">Github</a>
           </li>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#commands">Commands</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://seedbot.xyz/?page=discord">
+            <a class="nav-link" href="https://seedbot.xyz/?page=discord">
 <img src="Discord-Wordmark-Black.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
             </a>
           <li class="nav-item">
@@ -92,7 +92,7 @@ EOF;
           </li>
         </ul>
         <span class="navbar-text">
-          <a class="nav-link" href="http://seedbot.xyz/?page=invite">Invite Me!</a>
+          <a class="nav-link" href="https://seedbot.xyz/?page=invite">Invite Me!</a>
         </span>
       </div>
     </nav>
@@ -262,7 +262,7 @@ s~getallserverinvite<br>
     </div>
     <div class="footer">
       <div class="copyright">
-        Copyright &copy; 2018-2019 <a href="http://dariox.club">DARiOX</a> By using this website you consent to crypto minning.
+        Copyright &copy; 2018-2019 <a href="https://dariox.club">DARiOX</a> By using this website you consent to crypto minning.
       </div>
     </div>
   </body>
