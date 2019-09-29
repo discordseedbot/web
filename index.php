@@ -28,16 +28,16 @@ EOF;
   elseif ($page === "invite") {
     header("Location: https://discordapp.com/oauth2/authorize?client_id=423432378640498688&scope=bot&permissions=8");
   }
-  elseif ($page === "github" || $repo === "stable") {
+  elseif ($repo === "stable") {
     header("Location: https://github.com/discordseedbot/stable");
   }
-  elseif ($page === "github" || $repo === "canary") {
+  elseif ($repo === "canary") {
     header("Location: https://github.com/discordseedbot/canary");
   }
-  elseif ($page === "github" || $repo === "web") {
+  elseif ($repo === "web") {
     header("Location: https://github.com/discordseedbot/web");
   }
-  elseif ($page === "github" || $repo === "changelog") {
+  elseif ($repo === "changelog") {
     header("Location: https://github.com/discordseedbot/changelog");
   }
   elseif ($page === "github" && strlen($repo) < 3) {
