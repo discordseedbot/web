@@ -1,8 +1,8 @@
 <?php
-  $users = file_get_contents('https://api.seedbot.xyz/users.txt');
-  $channels = file_get_contents('https://api.seedbot.xyz/channels.txt');
-  $guilds = file_get_contents('https://api.seedbot.xyz/guilds.txt');
-  $botversion = file_get_contents('https://api.seedbot.xyz/version.txt');
+  $botversion = file_get_contents('https://api.seedbot.xyz?req=botVersion');
+  $users = file_get_contents('https://api.seedbot.xyz?req=userCount');
+  $channels = file_get_contents('https://api.seedbot.xyz?req=channelCount');
+  $guilds = file_get_contents('https://api.seedbot.xyz?req=guildCount');
   $botStatus;
 
   if (strlen($users) > 1) {
