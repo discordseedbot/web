@@ -63,8 +63,11 @@ EOF;
   elseif ($page === "discord") {
     header("Location: https://discord.gg/VMszsux");
   }
-  elseif ($page === "roadmao") {
+  elseif ($page === "roadmap") {
     header("Location: https://trello.com/b/bGJcacGd/seedbot");
+  }
+  elseif ($page === "docs"){
+    header("Location: https://docs.seedbot.xyz");
   }
   else {
     $botversion = file_get_contents('http://api.seedbot.xyz?req=botVersion', false, $ctx);
