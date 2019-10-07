@@ -1,8 +1,15 @@
 <?php
-  $botversion = file_get_contents('https://api.seedbot.xyz?req=botVersion');
-  $users = file_get_contents('https://api.seedbot.xyz?req=userCount');
-  $channels = file_get_contents('https://api.seedbot.xyz?req=channelCount');
-  $guilds = file_get_contents('https://api.seedbot.xyz?req=guildCount');
+
+$ctx = stream_context_create(array('http'=>
+    array(
+        'timeout' => 5, //Measured in seconds
+    )
+));
+
+  $botversion = file_get_contents('http://api.seedbot.xyz?req=botVersion', false, $ctx);
+  $users = file_get_contents('http://api.seedbot.xyz?req=userCount', false, $ctx);
+  $channels = file_get_contents('http://api.seedbot.xyz?req=channelCount', false, $ctx);
+  $guilds = file_get_contents('http://api.seedbot.xyz?req=guildCount', false, $ctx);
   $botStatus;
 
   if (strlen($users) > 1) {
@@ -40,7 +47,10 @@ EOF;
   elseif ($repo === "changelog") {
     header("Location: https://github.com/discordseedbot/changelog");
   }
-  elseif ($page === "github" && strlen($repo) < 3) {
+  elseif ($repo === "webapi") {
+    header("Location: https://github.com/discordseedbot/bot-api");
+  }
+  elseif ($page === "github") {
     header("Location: https://github.com/discordseedbot/");
   }
   elseif ($page === "guide") {
@@ -85,7 +95,7 @@ EOF;
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://seedbot.xyz/?page=discord">
-<img src="Discord-Wordmark-Black.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
+              <img src="Discord-Wordmark-Black.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
             </a>
           <li class="nav-item">
             <a class="nav-link" href="https://seedbot.xyz/?page=patreon"><i class="fab fa-patreon"></i> Patreon</a>
@@ -262,7 +272,7 @@ s~getallserverinvite<br>
     </div>
     <div class="footer">
       <div class="copyright">
-        Copyright &copy; 2018-2019 <a href="https://dariox.club">DARiOX</a> By using this website you consent to crypto minning.
+        Copyright &copy; 2018-2019 <a href="https://dariox.club">DARiOX</a>
       </div>
     </div>
   </body>
