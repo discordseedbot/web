@@ -68,9 +68,9 @@ EOF;
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
-    <link href="fa/css/all.css" rel="stylesheet"> 
+    <link href="https://cdn.seedbot.xyz/web/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.seedbot.xyz/web/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.seedbot.xyz/web/fa/css/all.css" rel="stylesheet"> 
     <title>SeedBot</title>
 
     
@@ -95,7 +95,7 @@ EOF;
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://seedbot.xyz/?page=discord">
-              <img src="Discord-Wordmark-Black.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
+              <img src="https://cdn.seedbot.xyz/web/discord-logo.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
             </a>
           <li class="nav-item">
             <a class="nav-link" href="https://seedbot.xyz/?page=patreon"><i class="fab fa-patreon"></i> Patreon</a>
@@ -116,7 +116,7 @@ EOF;
           <h3>What is SeedBot</h3>
           <p>SeedBot is a Discord Bot for programmers <strong>by</strong> programmers. This is mainly due to the DMOJ Module that the <a href="https://github.com/finchiedev">Amazing FinchieDev</a> developed. Other than the DMOJ Module there are other things in the bot such as, music, fun commands, and moderation bot. Our goal is to make the knockoff but good swiss-army knife of discord bots. If you want to see our wide range of commands then <a href="#commands">click here</a>. Oh and its open source.
         </div>
-        <img src="https://storage.googleapis.com/file-asia/cdn/seedbot/logo.png" class="logo" height="400px">
+        <img src="https://cdn.seedbot.xyz/web/logo.png" class="logo" height="400px">
       </div>
     </div>
     <br><br><br>
