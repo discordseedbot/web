@@ -1,4 +1,5 @@
 <?php
+    $botStatus;
 
 $ctx = stream_context_create(array('http'=>
     array(
@@ -61,6 +62,26 @@ EOF;
   }
   elseif ($page === "discord") {
     header("Location: https://discord.gg/VMszsux");
+  }
+  elseif ($page === "roadmao") {
+    header("Location: https://trello.com/b/bGJcacGd/seedbot");
+  }
+  else {
+    $botversion = file_get_contents('http://api.seedbot.xyz?req=botVersion', false, $ctx);
+    $users = file_get_contents('http://api.seedbot.xyz?req=userCount', false, $ctx);
+    $channels = file_get_contents('http://api.seedbot.xyz?req=channelCount', false, $ctx);
+    $guilds = file_get_contents('http://api.seedbot.xyz?req=guildCount', false, $ctx);
+
+    if (strlen($users) > 1) {
+      $botStatus = <<<EOF
+  <h3 class="status online">Online</h3>
+  EOF;
+    } else {
+      $botStatus = <<<EOF
+  <h3 class="status offline">Offline</h3><br>
+  <p>SeedBot is Offline! Check <a href="https://jyles.club/redirect.php?page=twitter">my twitter</a> to check the status of the bot. Or check the <em>Offical</em> <a href="https://status.dariox.club">DARiOX Status Page</a>.
+  EOF;
+    }
   }
 
 
@@ -167,6 +188,8 @@ s!help<br>
 s!patreon<br>
 <em><a href="https://seedbot.xyz/?page=patreon">Returns info on how donating on patreon helps me.</a></em><br>
 <br>
+s!roadmap<br>
+<em>Gives you a link to the <a href="https://seedbot.xyz?page=roadmap">Offical SeedBot Trello Roadmap</a></em>
 <br>
 <br>
 <h3> Moderation Commands <sup>All Disabled</sup></h3>
