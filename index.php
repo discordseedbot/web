@@ -140,7 +140,7 @@ EOF;
           <h3>What is SeedBot</h3>
           <p>SeedBot is a Discord Bot for programmers <strong>by</strong> programmers. This is mainly due to the DMOJ Module that the <a href="https://github.com/finchiedev">Amazing FinchieDev</a> developed. Other than the DMOJ Module there are other things in the bot such as, music, fun commands, and moderation bot. Our goal is to make the knockoff but good swiss-army knife of discord bots. If you want to see our wide range of commands then <a href="#commands">click here</a>. Oh and its open source.
         </div>
-        <img src="https://cdn.seedbot.xyz/web/logo.png" class="logo" height="400px">
+        <img src="https://cdn.seedbot.xyz/web/logo-min.png" class="logo" height="400px">
       </div>
     </div>
     <br><br><br>
@@ -193,6 +193,9 @@ s!patreon<br>
 <br>
 s!roadmap<br>
 <em>Gives you a link to the <a href="https://seedbot.xyz?page=roadmap">Offical SeedBot Trello Roadmap</a></em>
+<br>
+s!guide<br>
+<em>Gives you a link to the <a href="https://docs.seedbot.xyz">Offical SeedBot GitBook Page</a></em>
 <br>
 <br>
 <h3> Moderation Commands <sup>All Disabled</sup></h3>
