@@ -63,10 +63,10 @@ s!help<br>
 <em>Gives you a link to this page.</em><br>
 <br>
 s!patreon<br>
-<em><a href="https://seedbot.xyz/?page=patreon">Returns info on how donating on patreon helps me.</a></em><br>
+<em><a href="https://seedbot.xyz/?patreon">Returns info on how donating on patreon helps me.</a></em><br>
 <br>
 s!roadmap<br>
-<em>Gives you a link to the <a href="https://seedbot.xyz?page=roadmap">Offical SeedBot Trello Roadmap</a></em><br>
+<em>Gives you a link to the <a href="https://seedbot.xyz?roadmap">Offical SeedBot Trello Roadmap</a></em><br>
 <br>
 s!guide<br>
 <em>Gives you a link to the <a href="https://docs.seedbot.xyz">Offical SeedBot GitBook Page</a></em><br>
