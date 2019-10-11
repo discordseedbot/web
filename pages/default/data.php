@@ -2,11 +2,11 @@
 
   if (file_get_contents('https://api.seedbot.xyz?req=userCount') < 1){
     $botStatus = <<<EOF
-<img class="check" src="https://cdn.seedbot.xyz/web/cross.svg" height="40px"/>
+<img class="cross" src="https://cdn.seedbot.xyz/web/cross.svg" height="40px"/>
 <div class="status online">
     <div class="status title">
         SeedBot is Offline
-    </div><br>
+    </div>
     <div class="status desc">
         SeedBot is offline, please check our <a href="https://seedbot.xyz?discord">discord server</a> or check our <a href="http://status.dariox.club">status page</a> or my <a href="https://jyles.club?page=twitter">twitter</a>.
     </div>
@@ -43,9 +43,9 @@ EOF;
 <html>
   <head>
     <link href="https://cdn.seedbot.xyz/web/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="custom.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.seedbot.xyz/web/custom.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.seedbot.xyz/web/fa/css/all.css" rel="stylesheet"> 
-    <link href="status.css" rel="stylesheet" type="text/css">
+      <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
     <title>SeedBot</title>
 
     

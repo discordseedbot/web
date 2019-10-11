@@ -20,14 +20,14 @@ $ctx = stream_context_create(array('http'=>
 <html>
 	<head>
 		<title>SeedBot - Statistics</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+      <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<img class="check" src="https://cdn.seedbot.xyz/web/cross.svg" height="40px"/>
+		<img class="cross" src="https://cdn.seedbot.xyz/web/cross.svg" height="40px"/>
 		<div class="status online">
 		    <div class="status title">
 		        SeedBot is Offline
-		    </div><br>
+		    </div>
 		    <div class="status desc">
 		        SeedBot is offline, please check our <a href="https://seedbot.xyz?discord">discord server</a> or check our <a href="http://status.dariox.club">status page</a> or my <a href="https://jyles.club?page=twitter">twitter</a>.
 		    </div>
@@ -44,14 +44,14 @@ EOF;
 <html>
 	<head>
 		<title>SeedBot - Statistics</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+      <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<img class="check" src="check.svg" height="40px"/>
 		<div class="status online">
 			<div class="status title">
 				SeedBot is Online!
-			</div><br>
+			</div>
 			<div class="status desc">
 				SeedBot should be working fine, if it isn't please join <a href="https://seedbot.xyz?discord">my discord.</a>
 			</div>
