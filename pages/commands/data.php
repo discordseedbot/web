@@ -40,10 +40,14 @@ EOF;
 <!DOCTYPE html>
 <html>
 	<head>
-    	<link href="https://cdn.seedbot.xyz/web/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    	<link href="https://cdn.seedbot.xyz/web/css/custom.css" rel="stylesheet" type="text/css" />
-      <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
-    	<title>SeedBot - Commands</title>
+		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    		<meta name="author" content="DARiOX">
+    		<meta name="description" content="The Swiss Army Knife of Discord Bots">
+    		<link href="https://cdn.seedbot.xyz/web/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    		<link href="https://cdn.seedbot.xyz/web/custom.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
+    		<title>SeedBot - Commands</title>
 	</head>
 	<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom:1px #666666 dotted;">
