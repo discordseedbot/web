@@ -5,10 +5,6 @@ $ctx = stream_context_create(array('http'=>
         'timeout' => 5, //Measured in seconds
     )
 ));
-
-
-
-
     if (file_get_contents('http://api.seedbot.xyz?req=userCount', false, $ctx)  < 1) {
     	$botVersion = "N/A";
     	$userCount = "N/A";
@@ -43,6 +39,10 @@ EOF;
 <!DOCTYPE html>
 <html>
 	<head>
+    		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    		<meta name="author" content="DARiOX">
+    		<meta name="description" content="The Swiss Army Knife of Discord Bots">
 		<title>SeedBot - Statistics</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
