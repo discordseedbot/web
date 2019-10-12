@@ -3,10 +3,10 @@
   if (file_get_contents('https://api.seedbot.xyz?req=userCount') < 1){
     $botStatus = <<<EOF
 <img class="cross" src="https://cdn.seedbot.xyz/web/cross.svg" height="40px"/>
-<div class="status online">
+<div class="status offline">
     <div class="status title">
         SeedBot is Offline
-    </div>
+    </div><br>
     <div class="status desc">
         SeedBot is offline, please check our <a href="https://seedbot.xyz?discord">discord server</a> or check our <a href="http://status.dariox.club">status page</a> or my <a href="https://jyles.club?page=twitter">twitter</a>.
     </div>
@@ -24,7 +24,7 @@ EOF;
 <div class="status online">
     <div class="status title">
         SeedBot is Online!
-    </div>
+    </div><br>
     <div class="status desc">
         SeedBot should be working fine, if it isn't please join <a href="https://seedbot.xyz?discord">my discord.</a>
     </div>
@@ -76,9 +76,8 @@ EOF;
             <a class="nav-link" href="https://seedbot.xyz?commands">Commands</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?discord">
-              <img src="https://cdn.seedbot.xyz/web/discord-logo.svg" height="20px" style="margin-top:3.5px;" fill="#808080"/>
-            </a>
+            <a class="nav-link" href="https://seedbot.xyz?discord">Discord</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="https://seedbot.xyz?patreon"><img src="https://cdn.seedbot.xyz/web/patreon.svg" height="20px" stroke="#808080"> Patreon</a>
           </li>
