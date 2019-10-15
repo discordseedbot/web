@@ -1,43 +1,6 @@
 <?php
-
-  if (file_get_contents('https://api.seedbot.xyz?req=userCount') < 1){
-    $botStatus = <<<EOF
-<img class="cross" src="https://cdn.seedbot.xyz/web/cross.svg" height="40px"/>
-<div class="status offline">
-    <div class="status title">
-        SeedBot is Offline
-    </div><br>
-    <div class="status desc">
-        SeedBot is offline, please check our <a href="https://seedbot.xyz?discord">discord server</a> or check our <a href="http://status.dariox.club">status page</a> or my <a href="https://jyles.club?page=twitter">twitter</a>.
-    </div>
-</div>
-EOF;
-
-    $userCount = "N/A";
-    $guildCount = "N/A";
-    $channelCount = "N/A";
-    $botVersion = "N/A";
-    $botBuild = "N/A";
-  } else {
-    $botStatus = <<<EOF
-<img class="check" src="https://cdn.seedbot.xyz/web/check.svg" height="40px"/>
-<div class="status online">
-    <div class="status title">
-        SeedBot is Online!
-    </div><br>
-    <div class="status desc">
-        SeedBot should be working fine, if it isn't please join <a href="https://seedbot.xyz?discord">my discord.</a>
-    </div>
-</div>
-EOF;
-
-    $userCount = file_get_contents("http://api.seedbot.xyz?req=userCount");
-    $guildCount = file_get_contents("http://api.seedbot.xyz?req=guildCount");
-    $channelCount = file_get_contents("http://api.seedbot.xyz?req=channelCount");
-    $botVersion = file_get_contents("http://api.seedbot.xyz?req=botVersion");
-    $botBuild = file_get_contents("http://api.seedbot.xyz?req=botBuild");
-  }
-
+  Include '../functions.php';
+  $botStatus = seedBotStatusDIV();
 ?>
 <!DOCTYPE html>
 <html>
