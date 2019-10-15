@@ -25,21 +25,21 @@
             <a class="nav-link" href="https://seedbot.xyz">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?github">Github</a>
+            <a class="nav-link" href="https://seedbot.xyz?github" onclick="<?php header(`https://seedbot.xyz?github`); ?>">Github</a>
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?commands">Commands</a>
+            <a class="nav-link" href="https://seedbot.xyz?commands" onclick="<?php header(`https://seedbot.xyz?commands`); ?>">Commands</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?discord">Discord</a>
+            <a class="nav-link" href="https://seedbot.xyz?discord" onclick="<?php header(`https://seedbot.xyz?discord`); ?>">Discord</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?patreon"><img src="https://cdn.seedbot.xyz/web/patreon.svg" height="20px" stroke="#808080"> Patreon</a>
+            <a class="nav-link" href="https://seedbot.xyz?patreon" onclick="<?php header(`https://seedbot.xyz?patreon`); ?>"><img src="https://cdn.seedbot.xyz/web/patreon.svg" height="20px" stroke="#808080"> Patreon</a>
           </li>
         </ul>
         <span class="navbar-text">
-          <a class="nav-link" href="https://seedbot.xyz?invite">Invite Me!</a>
+          <a class="nav-link" href="https://seedbot.xyz?invite" onclick="<?php header(`https://seedbot.xyz?invite`); ?>">Invite Me!</a>
         </span>
       </div>
     </nav>
