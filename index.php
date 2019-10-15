@@ -14,7 +14,8 @@
 EOF;
 
 
-	require(__DIR__.'/pages/functions.php');
+	require(__DIR__.'/backend/redir.php');
+	require(__DIR__.'/backend/main.php');
 
 
 		//Redirects

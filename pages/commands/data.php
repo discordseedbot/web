@@ -1,5 +1,5 @@
 <?php
-  Include '../functions.php';
+  Include '../../backend/bot-info.php';
   $botStatus = seedBotStatusDIV();
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,6 @@
     		<meta name="description" content="The Swiss Army Knife of Discord Bots">
     		<link href="https://cdn.seedbot.xyz/web/css/bootstrap.css" rel="stylesheet" type="text/css" />
     		<link href="https://cdn.seedbot.xyz/web/custom.css" rel="stylesheet" type="text/css" />
-        <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
     		<title>SeedBot - Commands</title>
 	</head>
 	<body>
@@ -121,7 +120,7 @@ s!problem<br>
 <em>Loads problem info and a link to the problem</em><br>
 <br>
 s!search<br>
-<em>Searches for a problem<br>
+<em>Searches for a problem</em><br>
 <br>
 s!contest<br>
 <em>Loads content data and a link to the contest</em><br>

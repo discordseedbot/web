@@ -1,0 +1,19 @@
+.statusbg {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+.status.text{
+	position: fixed;
+	bottom: 0px;
+	right: 15px;
+	width: 220px;
+	height: 90px;
+}
+.status.desc{
+	width: 220px;
+	font-size: 8pt;
+}
+.status.title{
+	font-weight: bold;
+}

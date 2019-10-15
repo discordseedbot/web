@@ -1,5 +1,5 @@
 <?php
-  Include '../functions.php';
+  Include '../../backend/bot-info.php';
   $botStatus = seedBotStatusDIV();
 ?>
 <!DOCTYPE html>
@@ -14,13 +14,11 @@
     <link href="https://cdn.seedbot.xyz/web/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.seedbot.xyz/web/custom.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.seedbot.xyz/web/fa/css/all.css" rel="stylesheet"> 
-      <link href="https://cdn.seedbot.xyz/web/status.css" rel="stylesheet" type="text/css">
     <title>SeedBot</title>
 
     
   </head>
   <body>
-    <?php echo $botStatus; ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom:1px #666666 dotted;">
       <a class="navbar-brand" href="" onclick="alert('piss off cunt')">SeedBot</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,3 +68,4 @@
     </div-->
   </body>
 </html>
+    <?php echo $botStatus; ?>
