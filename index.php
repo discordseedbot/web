@@ -35,21 +35,20 @@ EOF;
 	elseif (isset($_GET['docs'])){
 		seedRedirect('docs');
 	}
-	elseif (isset($_GET['github'])) {
-		if($_GET['github'] === "stable"){
-			seedRedirect('git-stable');
-		}
-		elseif($_GET['github'] === "canary"){
-			seedRedirect('git-canary');
-		}
-		elseif($_GET['github'] === "web"){
-			seedRedirect('git-web');
-		}
-		elseif($_GET['github'] === "bot-api"){
-			seedRedirect('git-botapi');
-		} else {
-			seedRedirect('github');
-		}
+	elseif (isset($_GET['github'])){
+		seedRedirect('github');
+	}
+	elseif(isset($_GET['git-stable'])){
+		seedRedirect('git-stable');
+	}
+	elseif(isset($_GET['git-canary'])){
+		seedRedirect('git-canary');
+	}
+	elseif(isset($_GET['git-web'])){
+		seedRedirect('git-web');
+	}
+	elseif(isset($_GET['git-botapi'])){
+		seedRedirect('git-botapi');
 	}
 
 		//Pages
