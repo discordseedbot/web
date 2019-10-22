@@ -76,20 +76,20 @@ s!guide<br>
 <em>Gives you a link to the <a href="https://docs.seedbot.xyz">Offical SeedBot GitBook Page</a></em><br>
 <br>
 <br>
-<h3> Moderation Commands <sup>All Disabled</sup></h3>
+<h3> Moderation Commands</h3>
 s!kick [mention user to kick, required] [reason, reuqired]<br>
 <strong>Requires permission to kick</strong><br>
 <br>
 s!ban [mention user to ban, required] [reason, required]<br>
 <strong>Requires permission to ban</strong><br>
 <br>
-s!purge [ammount of messages to delete]<br>
+s!purge [ammount of messages to delete] <sup>In Development</sup><br>
 <strong>Requires permission to delete messages</strong><br>
 <br>
 <br>
 <br>
 <h3> Fun Commands </h3>
-s!rps [rock, paper, or scissors] <sup>(Disabled)</sup><br>
+s!rps [rock, paper, or scissors]<br>
 <em>Play rock paper scissors with SeedBot</em><br>
 <br>
 s!punch<br>
@@ -97,9 +97,6 @@ s!punch<br>
 <br>
 s!avatar [mention user]<br>
 <em>Gets your discord avatar or the user you mentioned.</em><br>
-<br>
-s!hammer [mention user]<br>
-<em>Hits them with a hammer</em><br>
 <br>
 s!magic8ball<br>
 <em>Predicts your future, now with mind reading!</em><br>
