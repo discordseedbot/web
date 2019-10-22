@@ -170,6 +170,10 @@ s~createinvitefromid [server/guild id]<br>
 s~getallserverinvite<br>
 <em>Gets invite links from all servers/guilds SeedBot is in</em><br>
 <br>
+s~api [request]<br>
+<em>Forces an API Request</em><br>
+Request: updateAll, update-userCount, update-guildCount, update-channelCount, update-botVersion, update-botBuild, update-botBuildDate, update-botBranch, update-botOwnerID, update-packageName, update-botLicense, update-packageDescription.<br>
+<br>
 <br>
 <br>
 <br>
