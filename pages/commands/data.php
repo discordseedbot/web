@@ -79,6 +79,9 @@ s!stats [request]<br>
 <em>Allows the user to get Statistics from the Bot</em><br>
 Request: userCount, guildCount, channelCount, botVersion, botBuild, botBuildDate, botBranch, botOwnerID, packageName, botLicense, packageDescription.<br>
 <br>
+s!screenshare<br>
+<em>Allows Screenshare in the Voice Channel you're in. If the icon is not showing for you, use this.</em><br>
+<br>
 <br>
 <h3 id="mod"> Moderation Commands</h3>
 s!kick [mention user to kick, required] [reason, reuqired]<br>
