@@ -1,6 +1,6 @@
 <?php
 	function seedBotStatusDIV() {
-		if (file_get_contents('https://api.seedbot.xyz?req=userCount') < 1){
+		if (file_get_contents('http://api.seedbot.xyz?req=userCount') < 1){
 			return file_get_contents(__DIR__.'/data/botinfo-offline.html');
 		} else {
 			return file_get_contents(__DIR__.'/data/botinfo-online.html');
