@@ -53,7 +53,7 @@ s~....|....Owner<br>
       </code>
     </div>
     <div class="commands">
-<h3> Generic Commands </h3>
+<h3 id="generic"> Generic Commands </h3>
 s!ping<br>
 <em>Sends a message with the bot response time, meausred in milliseconds. (ms)</em><br>
 <br>
@@ -75,8 +75,12 @@ s!roadmap<br>
 s!guide<br>
 <em>Gives you a link to the <a href="https://docs.seedbot.xyz">Offical SeedBot GitBook Page</a></em><br>
 <br>
+s!stats [request]<br>
+<em>Allows the user to get Statistics from the Bot</em><br>
+Request: userCount, guildCount, channelCount, botVersion, botBuild, botBuildDate, botBranch, botOwnerID, packageName, botLicense, packageDescription.<br>
 <br>
-<h3> Moderation Commands</h3>
+<br>
+<h3 id="mod"> Moderation Commands</h3>
 s!kick [mention user to kick, required] [reason, reuqired]<br>
 <strong>Requires permission to kick</strong><br>
 <br>
@@ -88,7 +92,7 @@ s!purge [ammount of messages to delete] <sup>In Development</sup><br>
 <br>
 <br>
 <br>
-<h3> Fun Commands </h3>
+<h3 id="fun"> Fun Commands </h3>
 s!rps [rock, paper, or scissors]<br>
 <em>Play rock paper scissors with SeedBot</em><br>
 <br>
@@ -112,7 +116,7 @@ s!copypasta<br>
 <br>
 <br>
 <br>
-<h3> DMOJ Commands </h3>
+<h3 id="dmoj"> DMOJ Commands </h3>
 s!problem<br>
 <em>Loads problem info and a link to the problem</em><br>
 <br>
@@ -133,13 +137,13 @@ s!user-search<br>
 <br>
 <br>
 <br>
-<h3> Math Command </h3>
+<h3 id="math"> Math Command </h3>
 Supported Equations:<br>
 Addition (+), Subtraction (-), Multiplication (*), Division (/ or ÷), Power to (^), Square Root (sqrt), Round (round), Floor (floor), Ceiling (ceiling), Pi (pi), Log (log), Random (rand)<br>
 <br>
 <br>
 <br>
-<h3> Developer Commands </h3>
+<h3 id="dev"> Developer Commands </h3>
 s~getip<br>
 <em>Returns public IP address provided by ISP.</em><br>
 <br>
