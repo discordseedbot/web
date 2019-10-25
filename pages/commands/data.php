@@ -88,6 +88,12 @@ Request: userCount, guildCount, channelCount, botVersion, botBuild, botBuildDate
 s!screenshare<br>
 <em>Allows Screenshare in the Voice Channel you're in. If the icon is not showing for you, use this.</em><br>
 <br>
+s!userinfo <sup>you can mention a user if you want, idc</sup><br>
+<em>Gives some information about yourself or the user you mentioned.</em><br>
+<br>
+s!serverinfo<br>
+<em>Gives some information about the server</em><br>
+<br>
 <br>
 <h3 id="mod"> Moderation Commands</h3>
 s!kick [mention user to kick, required] [reason, reuqired]<br>
