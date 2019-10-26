@@ -7,7 +7,7 @@
   $channelCount = seedBotStats("channelCount");
   $botVersion = seedBotStats("version");
   $botBuild = seedBotStats("build");
-
+  $buildDate = seedBotStats("buildDate");
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,6 +52,12 @@
 			<?php echo $botBuild ?>
 			<div class="statdesc">
 				Bot Build
+			</div>
+		</div>
+		<div class="stats two">
+			<?php echo $buildDate ?>
+			<div class="statdesc">
+				Bot Build Date
 			</div>
 		</div>
 <?php echo $botStatus; ?>

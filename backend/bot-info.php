@@ -21,11 +21,23 @@
 				case 'channelCount':
 					return file_Get_contents('http://api.seedbot.xyz?req=channelCount');
 					break;
-				case 'version':
+				case 'botVersion':
 					return file_Get_contents('http://api.seedbot.xyz?req=botVersion');
 					break;
-				case 'build':
+				case 'botBuild':
 					return file_Get_contents('http://api.seedbot.xyz?req=botBuild');
+					break;
+				case 'botBuildDate':
+					return file_get_contents('http://api.seedbot.xyz?req=botBuildDate');
+					break;
+				case 'apiVersion':
+					return file_get_contents('http://api.seedbot.xyz?req=apiVersion');
+					break;
+				case 'botBranch':
+					return file_get_contents('http://api.seedbot.xyz?req=botBranch');
+					break;
+				case 'botLicense':
+					return file_get_contents('http://api.seedbot.xyz?req=botLicense');
 					break;
 			}
 		}
