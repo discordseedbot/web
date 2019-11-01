@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{font-family: 'Open Sans', sans-serif;}
+
 table{
 	border:1px solid black;
+	font-size: 12pt;
 }
 td{
 	border:1px solid black;
+	padding: 1px;
+	text-align:right;
+	padding-left: 10px;
+	width: 150px;
 }
 th{
 	border:1px solid black;
+	padding: 2px;
+	padding-right: 5px;
+	text-align:left;
+	width: 150px;
 }
 tr{
 	border:1px solid black;
@@ -17,14 +30,15 @@ tr{
 	top: 120px;
 	left: 50px;
 	height:74px;
+	display: inline-grid;
 }
 .two{
 	position:relative;
-	left:200px;
-	bottom: 76px;
+	top:-97px;
+	left:330px;
 }
 .three{
 	position:relative;
-	left: 430px;
-	bottom: 152px;
+	top:-194px;
+	left:660px;
 }

@@ -1,5 +1,6 @@
 <?php
   Include '../../backend/bot-info.php';
+  Include '../../backend/nav.php';
   $botStatus = seedBotStatusDIV();
 ?>
 <!DOCTYPE html>
@@ -22,35 +23,7 @@ function redir(redirsk){
         </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom:1px #666666 dotted;">
-      <a class="navbar-brand" href="" onclick="alert('piss off cunt')">SeedBot</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://seedbot.xyz">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?github" onclick='redir(`https://seedbot.xyz?github`)'>Github</a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?commands" onclick="redir(`https://seedbot.xyz?commands`)">Commands</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?discord" onclick="redir(`https://seedbot.xyz?discord`)">Discord</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://seedbot.xyz?patreon" onclick="redir(`https://seedbot.xyz?patreon`)"><img src="https://cdn.seedbot.xyz/web/patreon.svg" height="20px" stroke="#808080"> Patreon</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a class="nav-link" href="https://seedbot.xyz?invite" onclick="redir(`https://seedbot.xyz?invite`)">Invite Me!</a>
-        </span>
-      </div>
-    </nav>
+<?php seedBotGetNav(); ?>
     <div class="custom-content">
       <div class="title">
         <h1>Welcome to the home of SeedBot</h1><br>

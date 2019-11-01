@@ -30,6 +30,9 @@
 			case 'git-botapi':
 				return header("Location: https://github.com/discordseedbot/bot-api");
 				break;
+			case 'status':
+				return header("Location: https://seedbot.statuspal.io");
+				break;
 		}
 	}
 ?>
