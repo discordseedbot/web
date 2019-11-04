@@ -50,6 +50,9 @@ EOF;
 	elseif(isset($_GET['git-botapi'])){
 		seedRedirect('git-botapi');
 	}
+	elseif(isset($_GET['status'])){
+		seedRedirect('status');
+	}
 
 		//Pages
 
