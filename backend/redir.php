@@ -1,4 +1,7 @@
 <?php
+
+	$redirJSON = json_decode(file_get_contents("./redir.json"));
+
 	function seedRedirect($redir) {
 		switch ($redir) {
 			case 'discord':
@@ -32,6 +35,43 @@
 				break;
 			case 'status':
 				return header("Location: https://seedbot.statuspal.io");
+				break;
+		}
+	}
+	function seedRedirectDev($redir) {
+		switch ($redir) {
+			case 'discord':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'invite':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'patreon':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'roadmap':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'docs':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'github':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'git-stable':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'git-canary':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'git-web':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'git-botapi':
+				return header("Location: ".$redirJSON->$redir[0]);
+				break;
+			case 'status':
+				return header("Location: ".$redirJSON->$redir[0]);
 				break;
 		}
 	}
