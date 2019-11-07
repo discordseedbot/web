@@ -40,35 +40,40 @@
 	}
 	function seedRedirectDev($redir) {
 		switch ($redir) {
+			$redirectVAR = $redirJSON->$redir[0];
 			case 'discord':
-				return header("Location: ".$redirJSON->$redir[0]);
+				return header("Location: ".$redirectVAR);
 				break;
 			case 'invite':
-				return header("Location: ".$redirJSON->$redir[0]);
+				return header("Location: ".$redirectVAR);
 				break;
 			case 'patreon':
-				return header("Location: ".$redirJSON->$redir[0]);
+				return header("Location: ".$redirectVAR);
 				break;
 			case 'roadmap':
-				return header("Location: ".$redirJSON->$redir[0]);
+				return header("Location: ".$redirectVAR);
 				break;
 			case 'docs':
-				return header("Location: ".$redirJSON->$redir[0]);
+				return header("Location: ".$redirectVAR);
 				break;
 			case 'github':
-				return header("Location: ".$redirJSON->$redir[0]);
+				return header("Location: ".$redirectVAR);
 				break;
 			case 'git-stable':
-				return header("Location: ".$redirJSON->$redir[0]);
+				$redirone = $redirJSON->$redir[1];
+				return header("Location: ".$redirone);
 				break;
 			case 'git-canary':
-				return header("Location: ".$redirJSON->$redir[0]);
+				$redirtoo = $redirJSON->$redir[2];
+				return header("Location: ".$redirtoo);
 				break;
 			case 'git-web':
-				return header("Location: ".$redirJSON->$redir[0]);
+				$redirthr = $redirJSON->$redir[3];
+				return header("Location: ".$redirthr);
 				break;
 			case 'git-botapi':
-				return header("Location: ".$redirJSON->$redir[0]);
+				$redirfor = $redirJSON->$redir[4];
+				return header("Location: ".$redirfor);
 				break;
 			case 'status':
 				return header("Location: ".$redirJSON->$redir[0]);
