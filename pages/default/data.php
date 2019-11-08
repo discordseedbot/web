@@ -16,11 +16,6 @@
     <link href="https://cdn.seedbot.xyz/web/custom.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.seedbot.xyz/web/fa/css/all.css" rel="stylesheet"> 
     <title>SeedBot</title>
-        <script>
-function redir(redirsk){
-  window.location.replace(redirsk);
-}
-        </script>
   </head>
   <body>
 <?php seedBotGetNav(); ?>
