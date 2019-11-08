@@ -39,8 +39,8 @@
 		}
 	}
 	function seedRedirectDev($redir) {
+		$redirectVAR = $redirJSON->$redir[0];
 		switch ($redir) {
-			$redirectVAR = $redirJSON->$redir[0];
 			case 'discord':
 				return header("Location: ".$redirectVAR);
 				break;
