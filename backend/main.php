@@ -15,4 +15,9 @@
 				break;
 		}
 	}
+
+	function seedGetLink($linkreq){
+		$redirJSON = json_decode(file_get_contents(__DIR__."./redir.json"));
+		return $redirJSON->$linkreq[0];
+	}
 ?>
