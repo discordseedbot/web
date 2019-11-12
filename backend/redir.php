@@ -1,39 +1,43 @@
 <?php
-
+	function seedMetaRedirect($link) {
+		$one = file_get_contents(__DIR__."/data/meta-pt1.html");
+		$two = file_get_contents(__DIR__."/data/meta-pt2.html");
+		echo $one.$link.$two;
+	}
 
 	function seedRedirect($redir) {
 		switch ($redir) {
 			case 'discord':
-				header("Location: https://discord.gg/VMszsux");
+				seedMetaRedirect("https://discord.gg/VMszsux");
 				break;
 			case 'invite':
-				header("Location: https://discordapp.com/oauth2/authorize?client_id=423432378640498688&scope=bot&permissions=8");
+				seedMetaRedirect("https://discordapp.com/oauth2/authorize?client_id=423432378640498688&scope=bot&permissions=8");
 				break;
 			case 'patreon':
-				header("Location: https://patreon.com/jyles_coadward");
+				seedMetaRedirect("https://patreon.com/jyles_coadward");
 				break;
 			case 'roadmap':
-				header("Location: https://trello.com/b/bGJcacGd/seedbot");
+				seedMetaRedirect("https://trello.com/b/bGJcacGd/seedbot");
 				break;
 			case 'docs':
-				header("Location: https://docs.seedbot.xyz");
+				seedMetaRedirect("https://docs.seedbot.xyz");
 				break;
 			case 'github':
-				header("Location: https://github.com/discordseedbot");
+				seedMetaRedirect("https://github.com/discordseedbot");
 			case 'git-stable':
-				header("Location: https://github.com/discordseedbot/stable");
+				seedMetaRedirect("https://github.com/discordseedbot/stable");
 				break;
 			case 'git-canary':
-				header("Location: https://github.com/discordseedbot/canary");
+				seedMetaRedirect("https://github.com/discordseedbot/canary");
 				break;
 			case 'git-web':
-				header("Location: https://github.com/discordseedbot/web");
+				seedMetaRedirect("https://github.com/discordseedbot/web");
 				break;
 			case 'git-botapi':
-				header("Location: https://github.com/discordseedbot/bot-api");
+				seedMetaRedirect("https://github.com/discordseedbot/bot-api");
 				break;
 			case 'status':
-				header("Location: https://seedbot.statuspal.io");
+				seedMetaRedirect("https://seedbot.statuspal.io");
 				break;
 		}
 	}
