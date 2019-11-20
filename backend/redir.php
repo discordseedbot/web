@@ -5,7 +5,7 @@
 		echo $one.$link.$two;
 	}
 
-	function seedRedirect($redir) {
+	function seedRedirectDep($redir) {
 		switch ($redir) {
 			case 'discord':
 				seedMetaRedirect("https://discord.gg/VMszsux");
@@ -43,8 +43,8 @@
 	}
 
 
-	$redirJSON = json_decode(file_get_contents(__DIR__."./redir.json"));
-	function seedRedirectDev($redir) {
+	function seedRedirect($redir) {
+		$redirJSON = json_decode(file_get_contents(__DIR__."./redir.json"));
 		$redirectVAR = $redirJSON->$redir[0];
 		switch ($redir) {
 			case 'discord':
