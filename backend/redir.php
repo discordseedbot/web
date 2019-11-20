@@ -48,41 +48,41 @@
 		$redirectVAR = $redirJSON->$redir[0];
 		switch ($redir) {
 			case 'discord':
-				return header("Location: ".$redirectVAR);
+				header("Location: ".$redirectVAR);
 				break;
 			case 'invite':
-				return header("Location: ".$redirectVAR);
+				header("Location: ".$redirectVAR);
 				break;
 			case 'patreon':
-				return header("Location: ".$redirectVAR);
+				header("Location: ".$redirectVAR);
 				break;
 			case 'roadmap':
-				return header("Location: ".$redirectVAR);
+				header("Location: ".$redirectVAR);
 				break;
 			case 'docs':
-				return header("Location: ".$redirectVAR);
+				header("Location: ".$redirectVAR);
 				break;
 			case 'github':
-				return header("Location: ".$redirectVAR);
+				header("Location: ".$redirectVAR);
 				break;
 			case 'git-stable':
 				$redirone = $redirJSON->$redir[1];
-				return header("Location: ".$redirone);
+				header("Location: ".$redirone);
 				break;
 			case 'git-canary':
 				$redirtoo = $redirJSON->$redir[2];
-				return header("Location: ".$redirtoo);
+				header("Location: ".$redirtoo);
 				break;
 			case 'git-web':
 				$redirthr = $redirJSON->$redir[3];
-				return header("Location: ".$redirthr);
+				header("Location: ".$redirthr);
 				break;
 			case 'git-botapi':
 				$redirfor = $redirJSON->$redir[4];
-				return header("Location: ".$redirfor);
+				header("Location: ".$redirfor);
 				break;
 			case 'status':
-				return header("Location: ".$redirJSON->$redir[0]);
+				header("Location: ".$redirJSON->$redir[0]);
 				break;
 		}
 	}
