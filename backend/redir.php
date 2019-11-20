@@ -1,11 +1,9 @@
 <?php
 	function seedMetaRedirect($link) {
-		$one = file_get_contents(__DIR__."/data/meta-pt1.html");
-		$two = file_get_contents(__DIR__."/data/meta-pt2.html");
-		echo $one.$link.$two;
+		echo "<script>window.location='".$link."'</script>";
 	}
 
-	function seedRedirectDep($redir) {
+	function seedRedirect($redir) {
 		switch ($redir) {
 			case 'discord':
 				seedMetaRedirect("https://discord.gg/VMszsux");
@@ -43,47 +41,47 @@
 	}
 
 
-	function seedRedirect($redir) {
+	function seedRedirectDev($redir) {
 		$redirJSON = json_decode(file_get_contents(__DIR__."./redir.json"));
 		$redirectVAR = $redirJSON->$redir[0];
 		switch ($redir) {
 			case 'discord':
 				header("Location: ".$redirectVAR);
-				break;
+				exit; break;
 			case 'invite':
 				header("Location: ".$redirectVAR);
-				break;
+				exit; break;
 			case 'patreon':
 				header("Location: ".$redirectVAR);
-				break;
+				exit; break;
 			case 'roadmap':
 				header("Location: ".$redirectVAR);
-				break;
+				exit; break;
 			case 'docs':
 				header("Location: ".$redirectVAR);
-				break;
+				exit; break;
 			case 'github':
 				header("Location: ".$redirectVAR);
-				break;
+				exit; break;
 			case 'git-stable':
 				$redirone = $redirJSON->$redir[1];
 				header("Location: ".$redirone);
-				break;
+				exit; break;
 			case 'git-canary':
 				$redirtoo = $redirJSON->$redir[2];
 				header("Location: ".$redirtoo);
-				break;
+				exit; break;
 			case 'git-web':
 				$redirthr = $redirJSON->$redir[3];
 				header("Location: ".$redirthr);
-				break;
+				exit; break;
 			case 'git-botapi':
 				$redirfor = $redirJSON->$redir[4];
 				header("Location: ".$redirfor);
-				break;
+				exit; break;
 			case 'status':
 				header("Location: ".$redirJSON->$redir[0]);
-				break;
+				exit; break;
 		}
 	}
 ?>
