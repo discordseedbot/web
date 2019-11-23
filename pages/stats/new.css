@@ -31,14 +31,9 @@ tr{
 	left: 50px;
 	height:74px;
 	display: inline-grid;
+	height: 94px;
 }
-.two{
-	position:relative;
-	top:-97px;
-	left:330px;
-}
-.three{
-	position:relative;
-	top:-194px;
-	left:660px;
+.table-break{
+	padding-left: 5px;
+	padding-right: 5px;
 }
