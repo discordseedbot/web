@@ -16,6 +16,7 @@ EOF;
 
 	require(__DIR__.'/backend/redir.php');
 	require(__DIR__.'/backend/main.php');
+	require(__DIR__.'/backend/ip.php');
 
 	$writeDirectory = "/var/www/dxcdn/log";
     $logFileName = "seedbot.csv";
