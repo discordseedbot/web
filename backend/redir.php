@@ -37,6 +37,9 @@
 			case 'status':
 				seedMetaRedirect("https://seedbot.statuspal.io");
 				break;
+			case 'privacy':
+				seedMetaReditect("https://dariox.club/privacy.html");
+				break;
 		}
 	}
 
