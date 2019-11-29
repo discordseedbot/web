@@ -90,7 +90,7 @@ EOF;
 		$destination = "Status Page";
 	}
 	elseif(isset($_GET['privacy'])){
-		header("Location: https://dariox.club/privacy.html")
+		header("Location: https://dariox.club/privacy.html");
 		$writeToLogType = "Redirect";
 		$destination = "DARiOX Privacy Policy";
 	}
