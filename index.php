@@ -18,7 +18,7 @@ EOF;
 	require(__DIR__.'/backend/main.php');
 	require(__DIR__.'/backend/ip.php');
 
-	$writeDirectory = "/var/www/dxcdn/log";
+	$writeDirectory = "/etc/darioxlog";
     $logFileName = "seedbot.csv";
     $logWriteDestination = $writeDirectory."/".$logFileName;
     $log = fopen($logWriteDestination, a);
