@@ -67,6 +67,9 @@ s!userinfo <sup>you can mention a user if you want, idc</sup><br>
 s!serverinfo<br>
 <em>Gives some information about the server</em><br>
 <br>
+s!info<br>
+<em>Gives information about the Discord Bot</em><br>
+<br>
 <br>
 <h3 id="mod"> Moderation Commands</h3>
 s!kick [mention user to kick, required] [reason, reuqired]<br>
@@ -166,6 +169,30 @@ s~api [request]<br>
 <em>Forces an API Request</em><br>
 Request: updateAll, update-userCount, update-guildCount, update-channelCount, update-botVersion, update-botBuild, update-botBuildDate, update-botBranch, update-botOwnerID, update-packageName, update-botLicense, update-packageDescription.<br>
 <br>
+s~role_list<br>
+<em>Lists roles along with their RoleID</em><br>
+<br>
+s~role_create<br>
+Not currently working<br>
+<br>
+s~role_give<br>
+<em>Gives the mentioned user the roleid given<br>
+	<code>s~role_give [@mentioned user] [roleid]</code>
+</em><br>
+<br>
+s~spam<br>
+<em>Spams a message in the current channel<br>
+	<code>s~spam [message count less than 100] [message to spam]</code></em>
+<br>
+<br>
+s~stats<br>
+<em>Gives stastics about SeedBot</em><br>
+Usage:<br>
+<code>
+s~stats usercount<br>
+s~stats serverlist<br>
+s~stats channelcount<br>
+</code>
 <br>
 <br>
 <br>
