@@ -194,6 +194,21 @@ s~stats serverlist<br>
 s~stats channelcount<br>
 </code>
 <br>
+s~mute [true/false] <@mentioned user><br>
+<em>Mutes the mentioned user with the correct boolean (true for muted, false for unmuted)</em><br>
+Usage:<br>
+<code>s~mute true <@230485481773596672></code> Mutes the mentioned user<br>
+<code>s~mute false <@230485481773596672></code> Unmutes the user mentioned</br>
+<code>s~mute <@230485481773596672> false</code> Invalid Command, Gives error<br>
+<br>
+s~defan [true/false] <@mentioned user><br>
+<em>Defans the mentioned user with the correct boolean (true for deafened, false for undeafened)</em><br>
+Usage:<br>
+<code>s~defan true <@230485481773596672></code> Defans the mentioned user<br>
+<code>s~defan false <@230485481773596672></code> Undefan the user mentioned</br>
+<code>s~defan <@230485481773596672> false</code> Invalid Command, Gives error<br>
+<br>
+<br>
 <br>
 <br>
     </div>
