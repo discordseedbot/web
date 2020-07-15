@@ -26,5 +26,13 @@
 	{
 		"name": "donate",
 		"link": "https://paypal.me/darioxservices"
+	},
+	{
+		"name": "twitter",
+		"link": "https://twitter.com/discordseedbot"
+	},
+	{
+		"name": "github",
+		"link": "https://github.com/discordseedbot"
 	}
 ]
