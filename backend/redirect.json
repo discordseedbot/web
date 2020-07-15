@@ -1,0 +1,30 @@
+[
+	{
+		"name": "discord",
+		"link": "https://discord.gg/VMszsux"
+	},
+	{
+		"name": "invite",
+		"link": "https://discordapp.com/oauth2/authorize?client_id=423432378640498688&scope=bot&permissions=8"
+	},
+	{
+		"name": "roadmap",
+		"link": "https://trello.com/b/bGJcacGd/seedbot"
+	},
+	{
+		"name": "docs",
+		"link": "https://docs.seedbot.xyz"
+	},
+	{
+		"name": "privacy",
+		"link": "https://dariox.club/privacy.html"
+	},
+	{
+		"name": "status",
+		"link": "https://seedbot.statuspal.io"
+	},
+	{
+		"name": "donate",
+		"link": "https://paypal.me/darioxservices"
+	}
+]

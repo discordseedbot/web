@@ -1,0 +1,17 @@
+[
+	{
+		"name": "invalidPage",
+		"type": "error",
+		"content": "Looks like you have gone to a place that does not exist! <a href='?p=home'>Lets go home</a>"
+	},
+	{
+		"name": "maintence",
+		"type": "info",
+		"content": "This part of the SeedBot website is currently undergoing maintence. Sorry!"
+	},
+	{
+		"name": "redirect",
+		"type": "info",
+		"content": "Redirecting to your page of choice in [3] seconds."
+	}
+]

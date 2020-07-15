@@ -1,0 +1,360 @@
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+	.SB.commands ul{
+		width: calc(100% - 250px);
+		font-style:italic;
+	}
+	.SB.commands ul li{
+		font-style:normal;
+		font-weight: 600;
+	}
+	.SB.commands ul code{
+		font-style: normal;
+		display: inline-block;
+		min-width:20px;
+		max-width: calc(100% - 300px);
+		width:auto;
+	}
+	#top{
+		position:absolute;
+		top:0;
+	}
+
+	.well.sidebar-nav{
+		width:298px;
+		position:fixed;
+		top: 80px;
+		right: 25px;
+		display:block;
+		padding:9px 0;
+		box-shadow: 5px -5px #000;
+		border-radius: 0px;
+	}
+</style>
+<hr id="top">
+<table class="table table-striped table-condensed table-bordered" style="box-shadow: 5px 5px #000;border-radius:0px;width: 300px;position:fixed;bottom: 25px;right: 25px;background-color:white;">
+	<thead>
+		<tr>
+			<th scope="col">Prefix</th>
+			<th scope="col">Usage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>s!</td>
+			<td>Prefix for Most Commands</td>
+		</tr>
+		<tr>
+			<td>s?</td>
+			<td>Music Prefix</td>
+		</tr>
+		<tr>
+			<td>sm!</td>
+			<td>Math</td>
+		</tr>
+		<tr>
+			<td>s~</td>
+			<td>Developer/Owner</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="well sidebar-nav">
+	<ul class="nav nav-list">
+	  <li class="nav-header">Shortcuts</li>
+	  <li><a href="#basic">Basic</a></li>
+	  <li><a href="#moderation">Moderation</a></li>
+	  <li><a href="#fun">Fun</a></li>
+	  <li><a href="#dmoj">DMOJ</a></li>
+	  <li><a href="#math">Math</a></li>
+	  <li><a href="#developer">Developer</a></li>
+	</ul>
+  </div>
+
+<div class="SB commands">
+	<!-- Basic Commands -->
+	<h2 id="baisc">Basic Commands</h2>
+	<ul>
+		<li>s!ping</li>
+		Sends a message with the bot response time, meausred in milliseconds. (ms)
+	</ul>
+	
+	<ul>
+		<li>s!invite</li>
+		Sends a link to invite the bot a server.
+	</ul>
+	
+	<ul>
+		<li>s!support</li>
+		Sends a link to the support discord and a support email address.
+	</ul>
+	
+	<ul>
+		<li>s!help</li>
+		Gives you a link to this page.
+	</ul>
+	
+	<ul>
+		<li>s!patreon</li>
+		Returns info on how donating on patreon helps me.
+	</ul>
+	
+	<ul>
+		<li>s!roadmap</li>
+		Gives you a link to the Offical SeedBot Trello Roadmap
+	</ul>
+	
+	<ul>
+		<li>s!guide</li>
+		Gives you a link to the Offical SeedBot GitBook Page
+	</ul>
+	
+	<ul>
+	<li>s!stats [request]</li>
+		Allows the user to get Statistics from the Bot<br>
+	<code>
+		Request: <br>
+		userCount, <br>
+		guildCount, <br>
+		channelCount, <br>
+		botVersion, <br>
+		botBuild, <br>
+		botBuildDate, <br>
+		botBranch, <br>
+		botOwnerID, <br>
+		packageName, <br>
+		botLicense, <br>
+		packageDescription<br>
+	</code>
+	</ul>
+	
+	<ul>
+		<li>s!screenshare</li>
+		Allows Screenshare in the Voice Channel you're in. If the icon is not showing for you, use this.
+	</ul>
+	
+	<ul>
+		<li>s!userinfo</li>
+		Gives some information about yourself or the user you mentioned.
+	</ul>
+	
+	<ul>
+		<li>s!serverinfo</li>
+		Gives some information about the server
+	</ul>
+	
+	<ul>
+		<li>s!info</li>
+		Gives information about the Discord Bot
+	</ul>
+	
+	<!-- Moderation Commands -->
+	<h2 id="moderation">Moderation Commands</h2>
+	<ul>
+		<li>s!kick [mention user to kick, required] [reason, reuqired]</li>
+		<strong>Requires permission to kick</strong>
+	</ul>
+	<ul>
+		<li>s!ban [mention user to ban, required] [reason, required]</li>
+		<strong>Requires permission to ban</strong>
+	</ul>
+	<ul>
+		<li>s!purge [ammount of messages to delete] In Development</li>
+		<strong>Requires permission to delete messages</strong>
+	</ul>
+	
+	<!-- Fun Commands -->
+	<h2 id="fun">Fun Commands</h2>
+	<ul>
+	<li>s!rps [rock, paper, or scissors]</li>
+	Play rock paper scissors with SeedBot
+	</ul>
+	
+	<ul>
+	<li>s!punch</li>
+	Punches someone you don't like
+	</ul>
+	
+	<ul>
+	<li>s!avatar [mention user]</li>
+	Gets your discord avatar or the user you mentioned.
+	</ul>
+	
+	<ul>
+	<li>s!magic8ball</li>
+	Predicts your future, now with mind reading!
+	</ul>
+	
+	<ul>
+	<li>s!asciify</li>
+	Makes your text look like it just came from a BBS!
+	</ul>
+	
+	<ul>
+	<li>s!ppsize</li>
+	See how big your pea is!
+	</ul>
+	
+	<ul>
+	<li>s!copypasta</li>
+	Randomly picks a copypasta out of our library!
+	</ul>
+	
+	<!-- DMOJ Commands -->
+	<h2 id="dmoj">DMOJ Commands</h2>
+	<ul>
+	<li>s!problem</li>
+	Loads problem info and a link to the problem
+	</ul>
+	
+	<ul>
+	<li>s!search</li>
+	Searches for a problem
+	</ul>
+	
+	<ul>
+	<li>s!contest</li>
+	Loads content data and a link to the contest
+	</ul>
+	
+	<ul>
+	<li>s!content-search</li>
+	Searches for a contest that has a similar name
+	</ul>
+	
+	<ul>
+	<li>s!user</li>
+	Loads information about the user and a link to the user
+	</ul>
+	
+	<ul>
+	<li>s!user-search</li>
+	Searches for a user with a similar name and loads information about the user.
+	</ul>
+	
+	<!-- Math Command -->
+	<h2 id="math">Math Command</h2>
+	<ul>
+		<li>Supported Equations</li>
+		Addition (+), Subtraction (-), Multiplication (*), Division (/ or ÷), Power to (^), Square Root (sqrt), Round (round), Floor (floor), Ceiling (ceiling), Pi (pi), Log (log), Random (rand)
+	</ul>
+	
+	
+	<!-- Developer Commands -->
+	<h2 id="developer">Developer/Debugging Commands</h2>
+	<ul>
+		<li>s~getip</li>
+	Returns public IP address provided by ISP.
+	</ul>
+	
+	<ul>
+		<li>s~announce [message] Disabled</li>
+	Puts message in every channel the bot can access.
+	</ul>
+	
+	<ul>
+		<li>s~channelsend [channelID] [message]</li>
+	Posts message to the channelID specifiyed
+	</ul>
+	
+	<ul>
+		<li>s~stats [serverlist, usercount, channelcount]</li>
+	Returns stastics for the specifiyed type.
+	</ul>
+	
+	<ul>
+		<li>s~eval [Node.JS command to execute]</li>
+	Executes the node.js command specifiyed.
+	</ul>
+	
+	<ul>
+		<li>s~restart</li>
+	Restarts discord bot.
+	</ul>
+	
+	<ul>
+		<li>s~rpc [content] the content can be, reset, refresh, or a message</li>
+	Resets, Refreshes, or sets the Rich Presence message
+	</ul>
+	
+	<ul>
+		<li>s~shell [*nix shell command]</li>
+	Executes shell command with whatever user the bot is running under
+	</ul>
+	
+	<ul>
+		<li>s~createinvitefromid [server/guild id]</li>
+	Creates Invite from the server/guild ID specifiyed
+	</ul>
+	
+	<ul>
+		<li>s~getallserverinvite</li>
+	Gets invite links from all servers/guilds SeedBot is in
+	</ul>
+	
+	<ul>
+		<li>s~api [request]</li>
+	<strong>Forces an API Request</strong><br>
+	Request: updateAll, update-userCount, update-guildCount, update-channelCount, update-botVersion, update-botBuild, update-botBuildDate, update-botBranch, update-botOwnerID, update-packageName, update-botLicense, update-packageDescription.
+	</ul>
+	
+	<ul>
+		<li>s~role_list</li>
+	Lists roles along with their RoleID
+	</ul>
+	
+	<ul>
+		<li>s~role_create</li>
+	Not currently working
+	</ul>
+	
+	<ul>
+		<li>s~role_give</li>
+	Gives the mentioned user the roleid given
+	s~role_give [@mentioned user] [roleid]
+	</ul>
+	
+	<ul>
+		<li>s~spam</li>
+	Spams a message in the current channel
+	s~spam [message count less than 100] [message to spam]
+	</ul>
+	
+	<ul>
+		<li>s~stats</li>
+	Gives stastics about SeedBot<br>
+	<code>
+	Usage:<br>
+	s~stats usercount<br>
+	s~stats serverlist<br>
+	s~stats channelcount<br>
+	</code>
+	</ul>
+	
+	<ul>
+		<li>s~mute [true/false] <@mentioned user></li>
+	Mutes the mentioned user with the correct boolean (true for muted, false for unmuted)<br>
+	<code>
+	Usage:<br>
+	s~mute true <@230485481773596672> Mutes the mentioned user<br>
+	s~mute false <@230485481773596672> Unmutes the user mentioned<br>
+	s~mute <@230485481773596672> false Invalid Command, Gives error<br>
+	</code>
+	</ul>
+	
+	<ul>
+		<li>s~defan [true/false] <@mentioned user></li>
+	Defans the mentioned user with the correct boolean (true for deafened, false for undeafened)<br>
+	<code>
+	Usage:<br>
+	s~defan true <@230485481773596672> Defans the mentioned user<br>
+	s~defan false <@230485481773596672> Undefan the user mentioned<br>
+	s~defan <@230485481773596672> false Invalid Command, Gives error<br>
+	</code>
+	</ul>
+</div>
+<br>
+<br>
+<a href="#top">Goto Top</a>
