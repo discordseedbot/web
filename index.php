@@ -1,20 +1,10 @@
 <?php
-	$maintence = false;
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+ ?>
 
-	print_r($maintence);
 
-	if ($maintence) {
-		echo "website is being worked on, be fuckin' paitent";
-		die();
-	}
-	require_once(__DIR__.'/backend/init.php');
-
-	if (!ISSET($_GET['p'])) {
-		$content = pageHandle("home");
-	} else {
-		$content = pageHandle($_GET['p']);
-	}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -54,7 +44,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="brand" href="#">SeedBot</a>
+					<a class="brand" href="?p=home">SeedBot</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li><a href="?p=home">Home</a></li>
@@ -79,7 +69,26 @@
 		<div class="container" style="margin-top: 55px; padding:9px 0;">
 			<div class="row">
 				<!-- start custom content -->
-				<?php echo $content; ?>
+
+
+<?php
+	$maintence = false;
+
+	print_r($maintence);
+
+	if ($maintence) {
+		echo "website is being worked on, be fuckin' paitent";
+	} else {
+		require_once(__DIR__.'/backend/init.php');
+
+		if (!ISSET($_GET['p'])) {
+			echo pageHandle("home");
+		} else {
+			echo pageHandle($_GET['p']);
+		}
+	}
+?>
+
 
 				<!-- end custom content -->
 			</div>

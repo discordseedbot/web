@@ -9,7 +9,8 @@
 				break;
 			case "statistics":
 				require_once(__DIR__."/pages/statistics.php");
-				return statsPage();
+				echo statsPage();
+				return "<!-- stats -->";
 				break;
 			default:
 				require_once(__DIR__."/redirectHandle.php");
