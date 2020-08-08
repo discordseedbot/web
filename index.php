@@ -56,6 +56,7 @@ error_reporting(E_ALL);
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=github">Github</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=donate">Donate</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=twitter">Twitter</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=roadmap">Project Roadmap</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=statistics">Bot Statistics</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://seedbot.statuspal.io/">Status Page</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://dariox.club/privacy.html">Privacy Policy</a></li>
