@@ -7,6 +7,9 @@
 			case "stable":
 				$id = 423432378640498688;
 				break;
+			case "partner":
+				$id = 737578402705309778;
+				break;
 			case "canary":
 				$id = 603130851303096350;
 				break;
